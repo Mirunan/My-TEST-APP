@@ -1,0 +1,71 @@
+
+<div class="max-w-sm rounded overflow-hidden shadow-lg pt-3">
+    <img src='https://www.superherodb.com/pictures2/portraits/10/100/639.jpg' alt="" srcset="">
+    <!-- <app-hero-image [imgUrl]=""></app-hero-image> -->
+    <!-- <app-hero-description [superHeros]="superHeros" ></app-hero-description> -->
+
+    <div class="flex">
+        <div class="w-2/4 ">
+            <a href="" class="font-bold text-purple-500 text-base m-auto flex justify-center">
+                {{ article.title }}
+            </a>
+            <p class="flex justify-center text-gray-700 text-base  overflow-auto">
+                ({{ article.domain() }})
+            </p>
+            <ul class="text-blue-800 font-medium flex justify-center align-middle p-4 ">
+                <li class="p-2 border-2">
+                    <a href (click)="voteUp()">
+                        <i class="">
+                            <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg class="w-10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 21.8 21.8"
+                                style="enable-background:new 0 0 21.8 21.8;" xml:space="preserve">
+                                <style type="text/css">
+                                    .st0 {
+                                        fill: #3ab4d3;
+                                    }
+                                </style>
+                                <path class="st0"
+                                    d="M5.1,8.5C4.6,9,3.9,9,3.5,8.5C3,8.1,3,7.4,3.5,6.9l6.7-6.6C10.4,0.1,10.7,0,11,0c0.3,0,0.6,0.1,0.8,0.3L18.4,7
+                                c0.4,0.4,0.4,1.1,0,1.6c-0.4,0.4-1.1,0.4-1.6,0l-4.7-4.8L12,20.7c0,0.6-0.5,1.1-1.1,1.1c-0.6,0-1.1-0.5-1.1-1.1L9.8,3.8L5.1,8.5z" />
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+
+
+                <li class="p-2 border-2">
+                    <a href (click)="voteDown()">
+                        <i>
+                            <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                            <svg class="w-10" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 21.825 21.825" style="enable-background:new 0 0 21.825 21.825;"
+                                xml:space="preserve">
+                                <path style="fill:#3ab4d3;"
+                                    d="M16.791,13.254c0.444-0.444,1.143-0.444,1.587,0c0.429,0.444,0.429,1.143,0,1.587l-6.65,6.651
+                                                                c-0.206,0.206-0.492,0.333-0.809,0.333c-0.317,0-0.603-0.127-0.81-0.333l-6.65-6.651c-0.444-0.444-0.444-1.143,0-1.587
+                                                                s1.143-0.444,1.587,0l4.746,4.762V1.111C9.791,0.492,10.299,0,10.918,0c0.619,0,1.111,0.492,1.111,1.111v16.904L16.791,13.254z" />
+                            </svg>
+                        </i>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+        <div class="w-2/4">
+            <div class=" flex justify-center font-thin text-8xl vote">
+                {{ article.votes }}
+            </div>
+            <div class=" flex justify-center">
+                Points
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- The following is The tag component -->
+    <app-hero-tags [tags]="'tag 1'"></app-hero-tags>
+</div>
